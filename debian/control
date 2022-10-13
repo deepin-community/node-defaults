@@ -1,0 +1,29 @@
+Source: node-defaults
+Section: javascript
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Suhail P <psuhailp@gmail.com>
+Build-Depends: debhelper-compat (= 12)
+ , node-clone <!nocheck>
+ , node-tap <!nocheck>
+ , pkg-js-tools (>= 0.9.20~)
+Standards-Version: 4.5.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-defaults
+Vcs-Git: https://salsa.debian.org/js-team/node-defaults.git
+Homepage: https://github.com/tmpvar/defaults
+Testsuite: autopkgtest-pkg-nodejs
+Rules-Requires-Root: no
+
+Package: node-defaults
+Architecture: all
+Depends: ${misc:Depends}
+ , node-clone
+Description: merge single level defaults over a config object
+ A simple one level options merge utility. This module exports
+ a function that takes 2 arguments: options and defaults.
+ When called, it overrides all of undefined properties in
+ options with the clones of properties defined in defaults.
+ Sidecases: if called with a falsy options value, options will
+ be initialized to a new object before being merged onto.
+ .
+ Node.js is an event-based server-side JavaScript engine.
