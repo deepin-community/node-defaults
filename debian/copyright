@@ -2,6 +2,7 @@ Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: defaults
 Upstream-Contact: https://github.com/tmpvar/defaults/issues
 Source: https://github.com/tmpvar/defaults#readme
+ https://registry.npmjs.org/@types/defaults
 
 Files: *
 Copyright: 2015 Elijah Insua <tmpvar@gmail.com>
@@ -9,7 +10,11 @@ License: Expat
 
 Files: debian/*
 Copyright: 2016 Suhail P <psuhailp@gmail.com>
- 2020 Xavier Guimard <yadd@debian.org>
+ 2020 Yadd <yadd@debian.org>
+License: Expat
+
+Files: types-*/*
+Copyright: Microsoft Corporation
 License: Expat
 
 License: Expat
